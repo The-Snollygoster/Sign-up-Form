@@ -9,9 +9,7 @@
 </head>
 <body>
     <div class="sideboard">
-
         <img src="./imgs/cropped-img.jpg" alt="" id="hero">
-
     </div>
 
     <div class="main-content">
@@ -22,8 +20,41 @@
                Sign up <i>now</i> to get started.</p>
             <p>You <i>know</i> you want to.</p>
         </div>
-        <div class="section-2"></div>
-        <div class="section-3"></div>
+
+        <div class="section-2">
+            <h1>Lets do this!</h1>
+
+            <!-- So I need a first name, Last name, Email, Phone number, Password and password confirm fields -->
+            <form action="" method="post" class="form">
+                <div class="row-1">
+                    <label for="first-name">First Name: </label>
+                        <input id="first-name" name="first-name" type="text">
+
+                    <label for="last-name">Last Name: </label>
+                        <input id="last-name" name="last-name" type="text">
+                </div>
+                <div class="row-2">
+                    <label for="email">E-mail: </label>
+                        <input id="email" name="email" type="email">
+
+                    <label for="number">Phone Number: </label>
+                        <input id="number" name="number" type="number">
+                </div>
+                <div class="row-3">
+                    <label for="password">Password: </label>
+                        <input id="password" name="password" type="text">
+
+                    <label for="con-pwd">Confirm Password: </label>
+                        <input id="con-pwd" name="con-pwd" type="text">
+                </div>
+            </form>
+        </div>
+
+        <div class="section-3">
+            <button type="submit" id="submit">Create Account</button>
+
+            <p>Already have an account? Log in</p>
+        </div>
 
     </div>
 </body>

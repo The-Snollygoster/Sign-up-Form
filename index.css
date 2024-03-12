@@ -39,7 +39,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #454549;
+    background-color: #929496;
     margin: 0;
     padding: 0;
     font-family: futura-renner, sans-serif;
@@ -50,27 +50,49 @@ body {
     display: flex;
     flex-direction: column;
     height: 27vh;
-    background-color: #ceb299;
+    background-color: #acaeaf;
 }
 
 .section-1 p {
     width: clamp(45ch, 50%, 75ch);
     font-size: clamp(1rem, 3vw, 2rem);
     font-weight: bold;
-    margin-left: 10%;
-    margin-bottom: 5px;
-    margin-top: 20px;
-    color: #252525;
+    margin: 0;
+    padding-left: 10%;
+    padding-top: 2%;
     line-height: 1.3;
 }
 
 .section-2 {
     display: flex;
+    flex-direction: column;
     height: 48vh;
+    font-size: clamp(1rem, 3vw, 2rem);
+    padding-left: 10%;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+    margin-bottom: 10px;
+}
+
+label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
 }
 
 .section-3 {
     display: flex;
     height: 25vh;
-    background-color: #af8764;
+    background-color: #acaeaf;
+    padding-left: 10%;
+    padding-top: 2%;
+}
+
+button {
+    height: 30px;
+    margin-right: 20px;
 }
