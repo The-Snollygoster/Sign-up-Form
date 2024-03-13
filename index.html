@@ -3,63 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-up!</title>
+    <title>Sign-up Form</title>
     <link rel="stylesheet" href="./index.css">
     <script src="./index.js" defer></script>
 </head>
 <body>
-    <div class="sideboard">
-        <img src="./imgs/cropped-img.jpg" alt="" id="hero">
-    </div>
+    <header class='header'>
+        <h1>Odin Sign Up Form</h1>
+        <p><em>This is not a real online service, but you could imagine.</em></p>
+    </header>
 
-    <div class="main-content">
-
-        <div class="section-1">
-            <p>This is not a real online service! you know you need something like this in your
-               life to help you realise your deepest dreams.
-               Sign up <i>now</i> to get started.</p>
-            <p>You <i>know</i> you want to.</p>
+    <form action="" method="post" class="sign-up-form">
+        <div class="form-row">
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name" id="first-name">
         </div>
-
-        <div class="section-2">
-            <h1>Lets do this!</h1>
-
-            <!-- So I need a first name, Last name, Email, Phone number, Password and password confirm fields -->
-            <form action="" method="post" class="form">
-                <div class="row-1">
-                    <label for="first-name">First Name: </label>
-                        <input id="first-name" name="first-name" type="text">
-
-                    <label for="last-name">Last Name: </label>
-                        <input id="last-name" name="last-name" type="text">
-                </div>
-                <div class="row-2">
-                    <label for="email">E-mail: </label>
-                        <input id="email" name="email" type="email">
-
-                    <label for="number">Phone Number: </label>
-                        <input id="number" name="number" type="number">
-                </div>
-                <div class="row-3">
-                    <label for="password">Password: </label>
-                        <input id="password" name="password" type="text">
-
-                    <label for="con-pwd">Confirm Password: </label>
-                        <input id="con-pwd" name="con-pwd" type="text">
-                </div>
-            </form>
+        <div class="form-row">
+            <label for="last-name">Last Name:</label>
+            <input type="text" name="last-name" id="last-name">
         </div>
-
-        <div class="section-3">
-            <button type="submit" id="submit">Create Account</button>
-
-            <p>Already have an account? Log in</p>
+        <div class="form-row">
+            <label for="email">E-Mail:</label>
+            <input type="email" name="email" id="email" placeholder="johnDoe@example.com">
         </div>
+        <div class="form-row">
+            <label for="phone-num">Phone Number:</label>
+            <input type="number" name="phone-num" id="phone-num">
+        </div>
+        <div class="form-row">
+            <label for="pswd">Password:</label>
+            <input type="text" name="pswd" id="pswd">
+        </div>
+        <div class="form-row">
+            <label for="pswd-confirm">Confirm Password:</label>
+            <input type="text" name="pswd-confirm" id="pswd-confirm">
+        </div>
+    </form>
 
-    </div>
+    <footer class="footer">
+        <button type="submit">Create Account</button>
+        <p>Already have an account? Log in</p>
+    </footer>
+
 </body>
 </html>
-
-<!-- Photo by <a href="https://unsplash.com/@danesduet?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Daniel Olah</a> on 
-<a href="https://unsplash.com/photos/the-sun-is-setting-over-a-sand-dune-qsuiCIY64Ig?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-  
