@@ -54,19 +54,64 @@ body {
     flex-wrap: wrap;
 }
 
-.form-row input[type='text'],
-.form-row input[type='email'],
-.form-row input[type='number'] {
-    background-color: #FFFFFF;
+input[type='text'],
+input[type='email'],
+input[type='number'] {
+    width: 100%;
+    vertical-align: baseline;
+    outline: none;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
-    width: 100%;
-    padding: 7px;
-    font-size: 14px;
+    background-color: transparent;
+    padding: 12px 10px 12px;
+    font-size: 16px;
+    font-size: 1rem;
+    transition: all 0.5s ease-in-out;
 }
 
-.form-row label {
-    margin-bottom: 15px;
+input:invalid {
+    border: 1px solid #b92326;
+    background-color: rgba(185, 35, 38, 0.25);
+}
+
+input:focus:invalid {
+    background-color: transparent;
+    border: 1px solid #b92326;
+}
+
+input:invalid {
+    color: #b92326;
+}
+
+input:invalid {
+    color: #b92326;
+}
+
+input:valid {
+    border: 1px solid #8BC34A;
+    background-color: rgba(139, 195, 74, 0.25);
+}
+
+input:focus:valid {
+    border: 1px solid #8BC34A;
+    background-color: transparent;
+}
+
+input:valid {
+    color: #8BC34A;
+}
+
+input:placeholder-shown {
+    background-color: transparent;
+    border: 1px solid #d8d8d8;
+}
+
+input::placeholder {
+    color: #858585;
+}
+
+input:focus::placeholder {
+    color: transparent;
 }
 
 .footer {
@@ -80,7 +125,21 @@ body {
 }
 
 button {
-    margin-bottom: 15px;
+    background-color: transparent;
+    border: 1px solid #8BC34A;
+    color: #8BC34A;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-size: 1rem;
+    margin: 15px auto;
+    vertical-align: middle;
+    display: block;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(139, 195, 74, 0.25);
+    border: 1px solid #8BC34A;
 }
 
 @media only screen and (min-width: 700px) {
@@ -103,7 +162,7 @@ button {
     .form-row label {
         text-align: right;
         width: 170px;
-        margin-top: 7px;
+        margin-top: 12px;
         padding-right: 10px;
       }
 }
