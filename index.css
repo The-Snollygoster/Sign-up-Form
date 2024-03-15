@@ -77,7 +77,16 @@ input:invalid {
 
 input:focus:invalid {
     background-color: transparent;
-    border: 1px solid #b92326;
+    transition: none;
+    border: 1px solid #8BC34A;
+    color: #D6D9DC;
+}
+
+input:focus:valid {
+    background-color: transparent;
+    transition: none;
+    border: 1px solid #8BC34A;
+    color: #D6D9DC;
 }
 
 input:invalid {
@@ -91,11 +100,6 @@ input:invalid {
 input:valid {
     border: 1px solid #8BC34A;
     background-color: rgba(139, 195, 74, 0.25);
-}
-
-input:focus:valid {
-    border: 1px solid #8BC34A;
-    background-color: transparent;
 }
 
 input:valid {
