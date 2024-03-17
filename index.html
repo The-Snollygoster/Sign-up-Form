@@ -8,10 +8,22 @@
     <script src="./index.js" defer></script>
 </head>
 <body>
-    <header class='header'>
+    <header class="toolbar">
+        <button class="tbb">Home</button>
+        <button class="tbb">About</button>
+        <button class="tbb">Gallery</button>
+        <div class="logo">
+            <img src='./imgs/logo.png' alt="logo" id="logo">
+        </div>
+        <button class="tbb">Pricing</button>
+        <button class="tbb">Order</button>
+        <button class="tbb">Contact</button>
+    </header>
+
+    <div class='header'>
         <h1>Odin Sign Up Form</h1>
         <p><em>This is not a real online service, but you could imagine.</em></p>
-    </header>
+    </div>
 
     <form action="" method="post" class="sign-up-form">
         <div class="form-row">
@@ -41,9 +53,13 @@
         </div>
         <button id="reset" type="reset">Reset</button>
     </form>
-    <footer class="footer">
+    <div class="submit">
         <button id="submit" type="submit">Create Account</button>
         <p>Already have an account? Log in</p>
+    </div>
+
+    <footer class="footer">
+        Copyright 2024. All Rights Reserved
     </footer>
 </body>
 </html>

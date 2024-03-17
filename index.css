@@ -11,7 +11,7 @@
 
 body {
     display: flex;
-    background-image: linear-gradient(to right, transparent, #181410, transparent), url('./imgs/4060492.jpg');
+    background-image: linear-gradient(to right, transparent, #141414, transparent), url('./imgs/wp2446734-luxury-wallpapers.jpg');
     background-size: 100%;
     background-attachment: fixed;
     line-height: 1.3;
@@ -111,7 +111,7 @@ input:focus::placeholder {
     color: transparent;
 }
 
-.footer {
+.submit {
     text-align: center;
     background: rgba(246, 247, 248, 0.3);
     border: 1px solid #D6D9DC;
@@ -147,7 +147,8 @@ button#reset {
     margin-bottom: -20px;
 }
 
-button:hover {
+#submit:hover,
+#reset:hover {
     background-color: rgba(139, 195, 74, 0.25);
     border: 1px solid #8BC34A;
 }
@@ -159,10 +160,54 @@ button:hover {
     margin-bottom: -13px;
 }
 
+.footer {
+    text-align: center;
+    padding-top: 5px;
+    width: 100%;
+    height: 30px;
+    background-color: #0B0B0B;
+    border-top: 1px solid #D6D9DC;;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #0B0B0B;
+    border-bottom: 1px solid #D6D9DC;;
+}
+
+.tbb {
+    background: none;
+    color: #D6D9DC;
+    flex: 1;
+    font-family: 'gothic';
+    font-size: 1rem;
+    border: none;
+}
+
+.tbb:hover {
+    color: #8BC34A;
+}
+
+.tbb:active {
+    color: #D6D9DC;
+}
+
+.logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+#logo {
+    height: 150px;
+}
+
 @media only screen and (min-width: 700px) {
     .header,
     .sign-up-form,
-    .footer {
+    .submit {
         width: 600px;
     }
     .form-row {
