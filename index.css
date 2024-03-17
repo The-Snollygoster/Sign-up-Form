@@ -129,7 +129,7 @@ input:focus::placeholder {
     padding: 50px;
 }
 
-button {
+button.submit {
     background-color: transparent;
     border: 1px solid #8BC34A;
     color: #8BC34A;
@@ -139,6 +139,20 @@ button {
     margin: 15px auto;
     display: block;
     cursor: pointer;
+}
+
+button.reset {
+    background-color: transparent;
+    border: 1px solid #D6D9DC;
+    color: #D6D9DC;
+    padding: 5px 15px;
+    font-size: 16px;
+    font-size: 1rem;
+    margin: 15px auto;
+    display: block;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: -20px;
 }
 
 button:hover {
