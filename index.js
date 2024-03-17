@@ -1,6 +1,7 @@
 let pswd = document.getElementById('pswd');
 let pswdConfirm = document.getElementById('pswd-confirm');
 let tooltip = document.getElementById('no-match');
+let reset = document.getElementById('reset');
 
 function pswdCompare() {
     if (pswd.value != pswdConfirm.value) {
@@ -15,3 +16,4 @@ function pswdCompare() {
 };
 
 pswdConfirm.addEventListener('focusout', pswdCompare);
+reset.addEventListener('click', () => {tooltip.innerText = '';})

@@ -129,7 +129,7 @@ input:focus::placeholder {
     padding: 50px;
 }
 
-button.submit {
+button#submit {
     background-color: transparent;
     border: 1px solid #8BC34A;
     color: #8BC34A;
@@ -141,7 +141,7 @@ button.submit {
     cursor: pointer;
 }
 
-button.reset {
+button#reset {
     background-color: transparent;
     border: 1px solid #D6D9DC;
     color: #D6D9DC;
