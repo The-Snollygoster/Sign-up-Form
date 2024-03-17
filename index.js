@@ -16,4 +16,4 @@ function pswdCompare() {
 };
 
 pswdConfirm.addEventListener('focusout', pswdCompare);
-reset.addEventListener('click', () => {tooltip.innerText = '';})
+reset.addEventListener('click', () => {tooltip.innerText = '';});
